@@ -1,0 +1,689 @@
+<!DOCTYPE html><html><head>
+      <title>音击教程 - 副本</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jiangsongbo\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.19\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="音击入门教程">音击入门教程 </h1>
+<h2 id="写在前面">写在前面 </h2>
+<p>本文是由哈工大当当代视觉文化研究会下属妈的智障音游同好会的群友产出，希望这个教程能够帮助你更好地入坑ONGEKI，本教程关注基础的操作内容和游玩时必备的基础知识，是一个入门教程。</p>
+<h2 id="一-音击オンゲキongeki简介">一、音击（オンゲキ\O.N.G.E.K.I.）简介 </h2>
+<blockquote>
+<p>ChatGPT：《音击》（日语：<strong>オンゲキ</strong>）是由世嘉开发的街机音乐游戏系列，首次于2018年7月26日上线运营。<br>
+这款游戏融合了传统音乐游戏和弹幕射击游戏的元素，玩家需要在演奏音乐的同时，操作角色躲避敌人的攻击。<br>
+游戏机台配备了操纵杆和多个按键，提供丰富的操作体验。<br>
+此外，游戏内设有卡片系统，玩家可以通过印卡机获取角色卡片，增强游戏的互动性和收藏价值。<br>
+目前，《音击》主要在日本运营，尚未在其他地区推出。<br>
+游戏的最新版本为《音击Refresh》</p>
+</blockquote>
+<div style="width: 75%; margin: 20px auto; padding: 15px; background: #f5f5f5; border-radius: 5px;">
+    <p style="margin: 10px 0;">
+        <strong>音击</strong>和SEGA的<strong>舞萌/中二</strong>一样，是一款街机音游，且也有较高的难度上限，同样是一款有挑战性的街机音游；
+    </p>
+    <p style="margin: 10px 0;">
+        音击格外强调角色的养成，它有一套完整的角色<strong>养成</strong><del>圈钱</del>系统。可惜的是，音击官方似乎并没有将其在海外运营的打算，但也会有神秘机子的存在，能玩到的人和日本人还挺少的。本教程大部分只关注基础的操作内容，是一个入门教程。
+    </p>
+</div>
+<h2 id="二-音击机台的按键构成">二、音击机台的按键构成 </h2>
+<p>除去某些test、service、coin键，音击总共有<strong>3×2+1×2+1×2=10个</strong>按键，<strong>1</strong>个摇杆</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>名称</th>
+<th>简易叫法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>①</td>
+<td>侧键（左\右）</td>
+<td></td>
+</tr>
+<tr>
+<td>②</td>
+<td>左侧红键（A）</td>
+<td>L1</td>
+</tr>
+<tr>
+<td>③</td>
+<td>左侧绿键（B）</td>
+<td>L2</td>
+</tr>
+<tr>
+<td>④</td>
+<td>左侧蓝键（C）</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>⑤</td>
+<td>右侧红键（A）</td>
+<td>R1</td>
+</tr>
+<tr>
+<td>⑥</td>
+<td>右侧绿键（B）</td>
+<td>R2</td>
+</tr>
+<tr>
+<td>⑦</td>
+<td>右侧蓝键（C）</td>
+<td>R3</td>
+</tr>
+<tr>
+<td>⑧</td>
+<td>摇杆</td>
+<td>Lever</td>
+</tr>
+<tr>
+<td>⑨</td>
+<td>红色menu</td>
+<td>Lmenu</td>
+</tr>
+<tr>
+<td>⑩</td>
+<td>黄色menu</td>
+<td>Rmenu</td>
+</tr>
+</tbody>
+</table>
+<p>音击中，玩家常用的ABC键颜色排布从左到右为<strong>红绿蓝</strong></p>
+<hr>
+<h2 id="三-游玩音击之前你要了解的事情">三、游玩音击之前，你要了解的事情 </h2>
+<h3 id="你要准备一张aime卡">你要准备一张AIME卡 </h3>
+<p>在这个游戏中，你需要一张叫做“Aime 卡”的东西来记录你的游戏结果。你通常可以通过购买<strong>非官方渠道的兼容卡/从日本进口的Aime卡/熟人代购</strong>来获得这张卡片。如今，使用Aime等娱乐IC卡的街机游戏越来越多，弄一张总不会是坏事情。</p>
+<h3 id="机台相关">机台相关 </h3>
+<p>音击的官方机台只在日本有大量布置，国内有其他的神秘地点或者自己购买民间自制手台才能玩到，机台高度较低，一般是坐着玩的。</p>
+<h3 id="gp相关">GP相关 </h3>
+<p>在 Ongeki 中，您在开始玩之前购买 GP。 之后，每首歌曲都会消耗 GP。<br>
+购买时的花费和一次可购买的金额限制是由机台设定，因此，若是自己购买手台，请给这一点进行设置<br>
+大致来说，每首播放歌曲 40 GP，通过延长选曲时间消耗 10GP。<br>
+在你退出账号时时，剩余的 GP 被转换为金币。</p>
+<h3 id="游戏界面的基础介绍">游戏界面的基础介绍 </h3>
+<p>左侧的 3 个按钮中：最左的按钮是取消（返回上一步），其余的 2 个按钮是左右移动（菜单/选项导航）<br>
+右侧三个按钮中：最左侧是确认，另外两个功能根据场景变化，具体功能会显示在屏幕上（选择歌曲时更改乐谱的难度等）。<br>
+侧键上的按钮主要用于大幅跳转/快速翻页。 它还用于在确定歌曲和难度后在确认屏幕上切换卡组。<br>
+在选择屏幕上不使用控制杆。</p>
+<h3 id="游戏前的设置">游戏前的设置 </h3>
+<p>和其他sega系游戏一样，第一次游戏都需要进行设置，推荐使用详细设置：</p>
+<ul>
+<li>刚开始玩把流速调整到 <strong>7.00~9.00</strong> 之间都可以，随着技术的提升慢慢提高流速，到最后使用 <strong>12.00~17.00</strong> 速均是很正常的现象.</li>
+<li>美术设置这里只推荐将 <strong>场地轨道</strong> 的亮度调至最低，其他不变.</li>
+<li>音效设置中，建议保留 <strong>敌弹音</strong> 和 <strong>bell</strong> 音，保留或提高 <strong>正解音</strong> 音量，有利于你的音押.</li>
+<li>判定表示相关设定中，建议按照自己的喜好进行设置；因为音击是一个准度要求高的游戏，所以推荐保留 <strong>Fast/Late</strong> 显示，尤其是保留 <strong>Break(小p)</strong> 的 <strong>Fast/Late</strong> 显示，以辅助控制小p.</li>
+</ul>
+<h2 id="四-音击基本玩法部分图源自音击官网httpsongekisegajphow_to_play">四、音击基本玩法（部分图源自<a href="https://ongeki.sega.jp/how_to_play/">音击官网</a>） </h2>
+<hr>
+<h3 id="note类型">Note类型 </h3>
+<h4 id="lever">Lever </h4>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.1.png" width="400">
+    <br>
+    图4.1 游戏内的轨道
+</center>
+<p>在轨道之中有一条<strong>黄色的线</strong>，其位置和你的摇杆角度相关：没错，它代表着你摇杆所在的位置，而你的 **中心位角色（Center）**会紧跟着这条黄线移动。当然也有特殊的情况，请看下面这张图</p>
+<p>通常情况下，Center角色的位置可以随意离开轨道，可以通过看黄色的线是否处于轨道外来判断角色是否离开轨道。在游戏内，如果角色离开轨道，轨道会变成灰色，其上的按键也会变成灰色，这代表你在轨道外是 <strong>不能</strong> 击打任何键的。</p>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.2.png" height="500" width="300">
+    <br>
+    图4.2 白色部分是轨道边上的墙
+</center>
+<p>在某些情况下，轨道边会有<strong>墙（Wall）</strong> 存在，<strong>如上图</strong>轨道边界存在白色的边墙。这时，当你移动摇杆使黄色指示线移动离开轨道时，你的角色会试图跟随你的黄色指示线，可是由于墙的阻挡，角色会贴墙移动，无法离开轨道。</p>
+<p><strong>注意：FLICK只根据玩家的操纵杆移动方向与速度进行判定，与玩家操纵角色所在位置和移动距离无关。</strong></p>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.3.png" width="500">
+    <br>
+    图4.3 LEVER类Note
+</center>
+<ul>
+<li><strong>BELL</strong>  操作摇杆，使<strong>Center</strong>位角色距离Bell有一定距离，即可吃到Bell，Bell不仅会给角色回复血量，也参与分数的结算。</li>
+<li><strong>敌弹</strong> 操作摇杆，使<strong>Center</strong>位角色的身体不触碰到敌弹。敌弹不仅会扣血，而且会减分数。</li>
+<li><strong>FLICK</strong> 操作摇杆，使<strong>Center</strong>位角色的身体在FLICK范围内，有一定的向指示方向的速度，即可判定。速度不够或者反向均会直接MISS，可以梁</li>
+</ul>
+<h4 id="红绿蓝地键">红绿蓝地键 </h4>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.4.png" width="500">
+    <br>
+    图4.4 地键
+</center>
+<ul>
+<li><strong>TAP</strong> 按照节奏按下即可，左右都可以判定到，但当出现同色押，必须同时按下左右两边的对应颜色按键，会持续有红绿蓝色的轨道辅助读谱</li>
+<li><strong>HOLD</strong> 可以换手，可以短暂松手，没有结尾松开判定。<br>
+需要注意的是，当你<strong>同时</strong>按下两个同色HOLD，可以松开一只手，用其中<strong>任意一边</strong>的按键来按住两根HOLD；<br>
+当你<strong>并非同时</strong>按下多个同色HOLD，绝对不可以可以松开<strong>最后按住HOLD的那个按键</strong>，用其中<strong>最后按住HOLD</strong>的按键来按住多根HOLD；<br>
+<strong>例如</strong>：下面这段配置，就是通过上面的原理来解决的。</li>
+</ul>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.5.png" height="500" width="600">
+    <br>
+    图4.5 源自<strong>初音ミクの激唱 (LUNATIC 14)</strong> 截取
+</center>
+<h4 id="侧键">侧键 </h4>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.6.png" width="500">
+    <img src="..\MDZZ_PLAYONGEKI\image4.7.png" width="500">
+    <br>
+    图4.6,4.7 侧键
+</center>
+<p>左右侧键仅仅是位置不同的tap，左就是左，右就是右。侧键的存在，给了音击绝佳的写出张的机会，出张这样的配置大概在<strong>12难度</strong>就广泛出现，还好音击的出张比较直白好读。<br>
+侧键在出现前会有紫色的边线来提示即将出现侧键，有利于读谱。</p>
+<hr>
+<h3 id="判定-结算-技术分数">判定、结算、技术分数 </h3>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.8.png" height="500" width="600">
+    <br>
+    图4.8 结算界面表现（<strong>歌曲信息</strong> Glorious Crown (tpz over-Over-OVERCUTE REMIX)(MASTER 14), <strong>HIGH SCORE</strong> 1002545, <strong>TECHNICAL SCORE</strong> 1002545
+    <br>最下方为<strong>PLATINUM SCORE（白金分数）</strong>2392/2870，并标出了距离下一颗白金星的差值
+    <br>
+    <strong>MAX COMBO(最大连击)</strong> 1435, 同时给出了<strong>大p(CRITICAL BREAK)、小p(BREAK)、蓝(HIT)、灰(MISS)、BELL、DAMAGE、FAST、LATE</strong>的数量）
+</center>
+<p>音击的判定分为<strong>大p(CRITICAL BREAK)、小p(BREAK)、蓝(HIT)、灰(MISS)、BELL、DAMAGE</strong>；对于BELL，有<strong>BELL 拾取到的BELL数/结算时总共出现的BELL数</strong>；对于敌弹，有<strong>DAMAGE</strong>来表示你收到的敌弹的<strong>伤害次数</strong>。<br>
+结算画面中，上面的SCORE RESULT是与角色养成相关的得分，我们不看这个，我们看下面的<strong>TECHNICAL SCORE</strong>,也叫<strong>技术分</strong></p>
+<p><strong>技术分</strong>：传统的音乐游戏评价机制，反应演奏精度的得分。但在演奏精度之外，收集回复道具也会加分，而“中弹”则会减10分。<br>
+音符判定从高到低依次为“CRITICAL BREAK”、“BREAK”、“HIT”、“MISS”。打出“HIT”以上的判定会累积“COMBO”。<br>
+满分为1010000（音符演奏950000+回复道具(BELL)收集60000）；评价等级为D～SSS+。</p>
+<p><strong>技术分中：</strong><br>
+1007500 = SSS+<br>
+1000000 = SSS<br>
+990000 = SS<br>
+970000 = S</p>
+<p>在音击，一首歌没打到<strong>SS</strong>可能有些越级。说明你可能没看懂或者是地力不足，不要打太多次。<br>
+技术分与<strong>RATING</strong>相关。</p>
+<p><strong>判定：</strong></p>
+<p>CRITICAL BREAK：+-33ms<br>
+BREAK：+-66ms<br>
+HIT：+-100ms<br>
+MISS<br>
+侧键不会HIT<br>
+<strong>白金分大p：+-16ms</strong></p>
+<p><strong>分数衰减</strong></p>
+<p>BREAK 90％<br>
+HIT 60%<br>
+3BREAK = 1HIT</p>
+<p><strong>特殊评价</strong></p>
+<p>FULL BELL<br>
+收集全部的回复道具<br>
+FULL COMBO<br>
+全程以“HIT”以上的判定完成演奏<br>
+ALL BREAK<br>
+全程以“BREAK”以上的判定完成演奏</p>
+<hr>
+<h3 id="rating与白金分">Rating与白金分 </h3>
+<p>Re：Fresh版本将<strong>EXPERT</strong>难度及以下的谱面也引入了白金分，如果取得的白金分在总白金分的<strong>94%</strong> 以上即可获得星星。具体规则如下：从94%开始每1%就会获得星星例如95%获得两星、96%获得三星。<strong>上限为5颗星</strong>，但是99%以上会以彩虹色的外观显示这五颗星</p>
+<p>同时相比之前的版本，《Refresh》版本将Rating改为<strong>小数点后三位</strong>，可以更加精细的确认Rating变动。Re:Fresh之后rating组成将会变成三部分，<strong>新曲杆（Recent杆）</strong> 将会由该版本的10个谱面组成，大致会占评分组成的15%。<strong>最好成绩杆（Best杆）</strong> 将会由旧版本的50个谱面组成，大致会占评分组成的80%，<strong>白金分数杆（P-Score杆）</strong> 则同样由最好的50个谱面组成，大致会占评分组成的5%<br>
+每首乐曲参与到的rating计算上限由原来的1007500扩张至 <strong>1010000</strong><br>
+现在通关状况标记（FC、AB）分数评级标记（SSS、SSS+等）以及FULL BELL标记会为rating提供加分</p>
+<p><strong>P-Score分数的计算</strong>：P-Score杆 = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo>∑</mo><mo stretchy="false">(</mo><msup><mtext>乐曲定数</mtext><mn>2</mn></msup><mo>×</mo><mtext>白金星数</mtext><mo stretchy="false">)</mo></mrow><mrow><mn>50</mn><mo>×</mo><mn>1000</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\sum (\text{乐曲定数}^2 \times \text{白金星数})}{50×1000}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.5123em;vertical-align:-0.4033em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1089em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">50</span><span class="mbin mtight">×</span><span class="mord mtight">1000</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:0em;">∑</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord text mtight"><span class="mord cjk_fallback mtight">乐曲定数</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8913em;"><span style="top:-2.931em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mbin mtight">×</span><span class="mord text mtight"><span class="mord cjk_fallback mtight">白金星数</span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4033em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span><br>
+<strong>例）</strong> 譜面定数12.0で☆3を取った場合、3×12.0²÷1000 = 0.432<br>
+<span style="color: #AAAAAA">（Rating的详细计算和定数与星级白金分速查表见附录）<br>
+</span><br>
+</p>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.10.png" height="600" width="750">
+    <div style="max-width: 75%; margin: 0 auto;">
+        <strong>图4.9 Rating颜色示意图</strong>
+        <ul style="text-align: left;">
+        </ul>
+    </div>
+</center>
+<hr>
+<h3 id="游戏内">游戏内 </h3>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image4.9.png" height="800" width="450">
+    <div style="max-width: 75%; margin: 0 auto;">
+        <strong>图4.10 游戏主界面演示</strong>
+        <ul style="text-align: left;">
+            <li> ①是你的角色血量，受到敌弹攻击血量会减少，减少到0游戏会<strong>强制结束</strong>；而拾取<strong>BELL</strong>会回复一定血量，且可以通过搭配防卡来减少角色受到攻击时的伤害，这对于一些<strong>弹幕谱</strong>完走有很大帮助；</li>
+            <li>②是敌方血量，不需要注意这个；</li>
+            <li>③是谱面，且在谱面左侧会显示目前的<strong>判定信息</strong>，如果打开了S,SS,SSS跳关则会显示距离S,SS,SSS的分差</li>
+            <li>④是你的角色以及<strong>判定线</strong></li>
+        </ul>
+    </div>
+</center>
+<hr>
+<h2 id="五-音击的游玩手型">五、音击的游玩手型 </h2>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\image5.1.png" width="500">
+    <br>
+    图5.1 游戏开始前的指示图
+</center>
+<p>首先，按照开头的指示，你的左手默认<strong>摇杆</strong>，右手默认<strong>R123</strong>。大部分配置都会默认你是这样的姿势出现，打起来会很顺手。</p>
+<p>你的右手该如何同时使用R123呢，一般我们使用<strong>124</strong>指，也就是<strong>大拇指、食指、无名指</strong>分别准备<strong>R1、R2、R3</strong><br>
+在 <strong>10+</strong> 难度之前，你便可以用这一招吃遍天了；而在 <strong>10+</strong> 难度之后，便会出现双手6k或者左手控制<strong>L123</strong>，右手操控<strong>摇杆</strong>的情况了。<br>
+左手的手型是对称的，使用<strong>124</strong>指，也就是<strong>大拇指、食指、无名指</strong>分别准备<strong>L3、L2、L1</strong><br>
+那么当你发现是三个颜色全押，你就可以化身哆啦A梦，直接全拍上去；如果发现是某个颜色的单点或者某两个颜色的双押，就用对应的手指去击打。</p>
+<p>当然音击并不是一个可以只靠这样的6k手型打遍全天下的游戏，实际游玩会发现这样的手型在处理1，2指相关配置时显得格外吃力；必要情况下，我们还需要<strong>北斗</strong><br>
+<strong>北斗</strong>就是手随着配置去进行移动，手型也随着配置不同改变的方式<br>
+其余的手型还有235、135等</p>
+<p><strong>侧键</strong>使用<strong>指肚/手侧</strong>击打，手背打有点疼不太推荐，但是很快，一般侧键都不是连打，会衔接地键和其他配置，打完马上回来。</p>
+<hr>
+<h2 id="六-在低难度谱中需要养成的习惯">六、在低难度谱中需要养成的习惯 </h2>
+<blockquote>
+<p>《音击》的特点是“像射击游戏一样用摇杆操控自机”“谱面场景和音符轨道会动态变化”。</p>
+<p>游戏采用类似STG的操作方式，玩家需要通过摇杆移动角色。同时，谱面和音符判定轨道会实时改变形态，带来独特的动态玩法体验</p>
+</blockquote>
+<blockquote>
+<p>由于新手往往难以适应摇杆操作，比起精准按键，更应优先做到以下两点：<br>
+<strong>1."保持握稳摇杆，确保角色始终停留在有效区域内（除必须双手处理的音符配置外）"<br>
+2."尽可能收取所有BELL和FLICK音符"</strong><br>
+虽然每首乐曲开始前都会显示"左手握摇杆，右手按按钮"的引导提示，但玩家可自由选择摇杆操作手（若习惯右手操作摇杆，还可开启谱面左右反转功能）。<br>
+(翻译并引用自<strong>オンゲキ【音撃‐O.N.G.E.K.I-】攻略 Wiki</strong>)</p>
+</blockquote>
+<h4 id="1读谱方式">①读谱方式 </h4>
+<p>音击的读谱是以<strong>读位置</strong>为基础的，一般的谱面note分布是符合多k直觉的，可以直接通过位置判断要按下的按键；部分谱面需要注意颜色来引导手序，随着难度越来越难，读颜色的地方会变多，但就算到了15+，谱面的基础仍然是<strong>读位置</strong></p>
+<p>低难度谱面出现地键之前一定会有引导线，请根据引导线预判自己手要怎么摆好（一般来说，低难度只需要遵循124指的摆法即可）</p>
+<h4 id="2不要乱动摇杆">②不要乱动摇杆 </h4>
+<p>摇杆相关的东西无非就四点：</p>
+<ul>
+<li>
+<p>场地</p>
+</li>
+<li>
+<p>敌弹</p>
+</li>
+<li>
+<p>bell</p>
+</li>
+<li>
+<p>FLICK<br>
+摇杆和地键侧键一样，是接收到某种指示才能动起来的东西。没有<strong>场地的变化、敌弹、bell或者FLICK</strong>就不要乱动摇杆，但只需要单手打键的时候要尽量握着摇杆。<br>
+经验上总结，需要移动摇杆的情况：</p>
+</li>
+<li>
+<p><strong>场地突然缩小且没有Wall的阻挡</strong>，且你的角色可能会随着场地的缩小而离开场地，这时可能需要移动摇杆，缓慢的跟随黑色场地移动即可</p>
+</li>
+<li>
+<p><strong>出现需要移动接的bell</strong>，要准确摆动摇杆，低难度的铃铛一般都需要移动去接，不动接bell是高难度会出现的配置</p>
+</li>
+<li>
+<p><strong>出现会对你造成威胁的敌弹</strong>，需要准确摆动摇杆</p>
+</li>
+<li>
+<p><strong>出现flick</strong>，需要迅速摆动摇杆（处理flick的时候，不需要握住摇杆摆动，可以进行推的操作，有的谱面还需要你反手回拉摇杆，需要多熟悉FLICK的处理，对以后拆谱会有很大帮助）</p>
+</li>
+<li>
+<p>更熟练的情况：<strong>出现轨道缩小或铃铛或引导线</strong>，立即抓好摇杆</p>
+</li>
+<li>
+<p>在不少情况下，一只手3k，另一只手跟着你击打的note和引导线是一个不错的选择，经常用作谱面的bell和躲避敌弹的引导</p>
+</li>
+</ul>
+<p>同样的，在之后的难度，会有纯6k或者4，5k段，这时就需要你学会放手。</p>
+<h4 id="3侧键的处理">③侧键的处理 </h4>
+<p>左手打左边右手打右边，高难度才会有出张，也不会是特别难的出张，使用<strong>手侧面</strong>或<strong>手掌面</strong>击打。</p>
+<h2 id="七-卡组的基础知识与弹幕谱的完走相关引用自オンゲキ攻略-wiki并进行翻译和适当修改">七、卡组的基础知识（与弹幕谱的完走相关/引用自オンゲキ攻略 Wiki并进行翻译和适当修改） </h2>
+<h3 id="基础知识">基础知识 </h3>
+<p>本游戏允许玩家组建由3张卡牌构成的卡组。</p>
+<p>每张角色卡牌都设有属性，三种属性形成循环克制关系：<br>
+<strong>火属性(FIRE/红)→叶属性(LEAF/绿)→水属性(AQUA/蓝)→火属性(FIRE)</strong> 的循环中，玩家对右侧属性可获得10%加成，对左侧属性则承受10%减益。但敌方弹幕造成的伤害比例固定，不受属性影响。</p>
+<p>卡牌设有特殊技能，包含攻击力提升等效果。增强攻击力有助于在演奏时提高击破数，从而更容易收集道具。</p>
+<ul>
+<li>标注"BOSS"：生效于乐曲后半段（当对手从音击猫切换为专属角色后）</li>
+<li>"先制"：在击败对手前生效</li>
+<li>"追撃"：在击败对手后生效</li>
+<li>"满血"：仅在生命值100%时有效</li>
+<li>"无伤"：受到任何伤害即失效（画面左侧出现"DAMAGE"提示时）<br>
+• BOOST类技能可能存在属性/角色限制<br>
+• 标注"融合"的ATTACK类技能，其效果强度取决于同角色卡牌数量<br>
+• 部分技能有站位要求（Center/中央 Left/左 Right/右）</li>
+</ul>
+<h3 id="如何获取卡牌">如何获取卡牌？ </h3>
+<p>通过游戏内活动或CARDMARKER，使用私服的玩家通常可以登录网站直接发卡，五张为满星级。</p>
+<h3 id="什么是弹幕谱">什么是弹幕谱？ </h3>
+<p>弹幕分为<strong>通常弹（粉色）、强化弹（紫色）、危险弹（橙色）、激光</strong>，不同弹幕的伤害不同。弹幕谱面通常属于<strong>LUNATIC</strong>难度，对玩家的走位技巧要求极高。<br>
+部分弹幕是<strong>固定的</strong>（如《怨擊》的“芋虫”段）<br>
+另一部分弹幕是<strong>自机狙</strong>（追踪玩家位置），需要实时调整走位<br>
+弹幕谱就是通过弹幕、bell、场地限制使玩家侧重于<strong>走位难度</strong>的谱面，需要通过<strong>搭配防卡/降低流速</strong>等方式攻克<br>
+除典型的<strong>『弹幕系LUNATIC』</strong> 外，东方Project曲目和BOSS曲中也常有轻度弹幕，如果感到吃力请使用防卡攻克</p>
+<h3 id="防御类guard卡牌介绍">防御类（GUARD）卡牌介绍 </h3>
+<p><strong>【被弹伤害减免类技能】</strong><br>
+主要效果为减少受击时承受的伤害值。另有部分技能虽无法避免MISS造成的伤害，但可大幅降低被弹伤害量。</p>
+<p><strong>【具体技能列表】</strong><br>
+<strong>火属性防御+○○</strong>：减免来自<strong>FIRE/LEAF/AQUA中指定1种属性</strong> 的伤害○○%｜自身攻击力提升△%<br>
+<strong>叶属性防御+○○</strong>：同上<br>
+<strong>水属性防御+○○</strong>：同上</p>
+<p><strong>全属性防御+○○</strong>：减免所有伤害○○%｜自身攻击力提升△%</p>
+<p><strong>屏障+○○</strong>：减免<strong>FIRE/LEAF/AQUA中指定属性</strong>强化弹幕的伤害○○%｜自身攻击力提升△%</p>
+<p><strong>治疗+○○</strong>：提升BELL音符的生命回复量○○%</p>
+<h3 id="防卡搭配示例对战相手あかニャンfire-lv60">防卡搭配示例(对战相手：あかニャン【FIRE】 Lv.60) </h3>
+<div style="width: 100%; text-align: center; margin: 0 auto; font-family: Arial, sans-serif;">
+  <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    <div style="width: 30%; margin: 0 10px;">
+      <img src="..\MDZZ_PLAYONGEKI\image7.1.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div style="width: 30%; margin: 0 10px;">
+      <img src="..\MDZZ_PLAYONGEKI\image7.2.png" style="max-width: 100%; height: auto;">
+    </div>
+    <div style="width: 30%; margin: 0 10px;">
+      <img src="..\MDZZ_PLAYONGEKI\image7.3.png" style="max-width: 100%; height: auto;">
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <div style="width: 30%; margin: 0 10px;">
+      <p>战斗后半段，伤害减轻40%<br>
+自身攻击力提升3%</p>
+    </div>
+    <div style="width: 30%; margin: 0 10px;">
+      <p>伤害减轻40%<br>
+      强化弹伤害减轻30%<br>
+危险弹伤害减轻30%</p>
+    </div>
+    <div style="width: 30%; margin: 0 10px;">
+      <p>来自【FIRE】属性的伤害减少35%<br>
+自身攻击力提升5%</p>
+    </div>
+  </div>
+</div>
+<div style=" margin: 0 auto; font-family: Arial, sans-serif; line-height: 1.6;">
+    <h2 style="border-bottom: 1px solid #ddd; padding-bottom: 8px;">八、基础排键方式</h2>
+    <h4 style="margin-top: 25px;">①单手+摇杆</h4>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.1.png" style="max-width: 100%; height: auto;">
+    </div>
+    <p>这种配置想要识别都有一个特征，就是出现键的同时，又出现了摆动摇杆的需求，这就需要摇杆和地键同时操作，基本上都长上图这样。</p>
+    <p>这种配置的难点一般是会混入定拍和单手切等片手配置，或者是摇杆特别难处理</p>
+    <h4 style="margin-top: 25px;">②侧键+摇杆的类似拍划的配置</h4>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.2.png" style="max-width: 100%; height: auto;">
+    </div>
+    <p>会出现类似的摇杆摆动方向和侧键方位同侧的配置，有时是先后出现，有时是类似双押。需要进行多次连续的摇杆换手操作，同时也考验定位力。</p>
+    <h4 style="margin-top: 25px;">③地键锁手</h4>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.11.png" style="max-width: 30%; height: auto;">
+    </div>
+    <p>通过地键hold锁住一只手后，就会出现出张和单手处理摇杆、侧键的配置</p>
+    <h4 style="margin-top: 25px;">④双手离开摇杆的多k配置</h4>
+    <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.4.png" style="max-width: 30%; height: auto; margin: 5px;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.5.png" style="max-width: 30%; height: auto; margin: 5px;">
+        <br>
+        <img src="..\MDZZ_PLAYONGEKI\image8.6.png" style="max-width: 30%; height: auto; margin: 5px;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.7.png" style="max-width: 30%; height: auto; margin: 5px;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.8.png" style="max-width: 30%; height: auto; margin: 5px;">
+    </div>
+    <p>简单概括就是不需要移动摇杆的3，4，5，6k配置</p>
+    <p>通常有：</p>
+    <ul style="padding-left: 20px;">
+        <li>4k：有最简单的<strong>红绿 绿蓝</strong>的4k，也有<strong>红蓝 蓝红</strong>、<strong>绿蓝 红绿</strong>的配置，但都很容易看出是4k</li>
+        <li>3k：音击的3k并不需要两只手去打3个键，大部分的所谓3k实际上都是4k</li>
+        <li>1+3k：简单来说就是一只手只打一个颜色，另一只手单独处理3k配置</li>
+        <li>2+3k：一只手处理2k一只手处理3k
+        </li><li>6k</li>
+        <li>5k：实际可以拆成6k，在高难的情况，会有假5k的配置，注意上面的最后一张图有五条引导线，但中间键可能是红或者蓝，这就是典型的6k，读谱难度较高。</li>
+    </ul>
+    <h4 style="margin-top: 25px;">⑤看似是单手 实则需要双手拆的配置</h4>
+        <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.9.png" style="max-width: 100%; height: auto;">
+    </div>
+    <p>比如一些看似很难的“单手切”，其实有一部分在不需要移动摇杆的情况下双手拆成交互，大大提升稳定性</p>
+        <h4 style="margin-top: 25px;">⑥纵连</h4>
+        <div style="text-align: center; margin: 15px 0;">
+        <img src="..\MDZZ_PLAYONGEKI\image8.10.png" style="max-width: 100%; height: auto;">
+    </div>
+    <p>特征就是同色的note排列在一起，拆成左右手的交互即可解掉</p>
+</div>
+<h2 id="附录">附录 </h2>
+<h3 id="1-参考网站">1 参考网站 </h3>
+<p>オンゲキRe:Fresh公式サイト <a href="https://ongeki.sega.jp/">https://ongeki.sega.jp/</a><br>
+オンゲキ攻略wiki  <a href="https://wikiwiki.jp/gameongeki/">https://wikiwiki.jp/gameongeki/</a><br>
+谱面预览网站 <a href="https://sdvx.in/ongeki.html">https://sdvx.in/ongeki.html</a><br>
+オンゲキ譜面保管所 <a href="https://www.youtube.com/@ongeki_humen">https://www.youtube.com/@ongeki_humen</a><br>
+【教程】音击/ONGEKI —— 入门篇：游戏入门指引（入坑教学指南）（及其系列教程） <a href="https://www.bilibili.com/video/BV135411D7GK/">https://www.bilibili.com/video/BV135411D7GK/</a><br>
+Refresh后谱面预览b站搬运-湛蓝日向夏 <a href="https://space.bilibili.com/27547067/">https://space.bilibili.com/27547067/</a><br>
+OngekiButtonPrinter（手台viewer） <a href="https://www.bilibili.com/opus/1091366492935553030">https://www.bilibili.com/opus/1091366492935553030</a><br>
+MU3 Live Tools <a href="https://github.com/r-value/mu3livetools">https://github.com/r-value/mu3livetools</a></p>
+<h3 id="2-单曲目ts与rating计算方式和各星级与定数的白金分表摘自オンゲキ攻略wiki">2 单曲目TS与Rating计算方式和各星级与定数的白金分表（摘自オンゲキ攻略wiki） </h3>
+<p><strong>技术分数（Technical Score）与谱面定数</strong></p>
+<dl>
+    <p>根据技术分数与谱面定数决定。<br>在两个基准点之间呈线性变化。</p>
+<div style="overflow-x: auto;">
+      <table>
+        <thead>
+          <tr>
+            <th>分数等级</th>
+            <th>TS</th>
+            <th>值</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3" style="text-align:left;">SSS+</td>
+            <td style="background-color:lightyellow; text-align:right;">1,010,000</td>
+            <td style="background-color:lightyellow; text-align:left;">谱面定数+2.000</td>
+          </tr>
+          <tr>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;">TS每上升10则上升0.001</td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">1,007,500</td>
+            <td style="background-color:lightyellow; text-align:left;">谱面定数+1.750</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">SSS</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;">TS每上升15则上升0.001</td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">1,000,000</td>
+            <td style="background-color:lightyellow; text-align:left;">谱面定数+1.250</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">SS</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;">TS每上升20则上升0.001</td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">990,000</td>
+            <td style="background-color:lightyellow; text-align:left;">谱面定数+0.750</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">S</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;">TS每上升26.6...则上升0.001</td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">970,000</td>
+            <td style="background-color:lightyellow; text-align:left;">谱面定数±0.000</td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">AAA~AA</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;"></td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">900,000</td>
+            <td style="background-color:lightyellow; text-align:left;"></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">A~BBB</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;"></td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">800,000</td>
+            <td style="background-color:lightyellow; text-align:left;"></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="text-align:left;">BB~C</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;"></td>
+          </tr>
+          <tr>
+            <td style="background-color:lightyellow; text-align:right;">500,000</td>
+            <td style="background-color:lightyellow; text-align:left;"></td>
+          </tr>
+          <tr>
+            <td style="text-align:left;">D</td>
+            <td style="text-align:center;">～</td>
+            <td style="text-align:left;"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+</dl>
+<div>
+  <p>例）谱面定数12.5的情况</p>
+  <div style="overflow-x: auto;">
+    <table>
+      <thead>
+        <tr>
+          <th>分数</th>
+          <th>计算公式</th>
+          <th>单曲率</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:right;">1,010,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+2.000</span></td>
+          <td>14.500</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">1,009,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+1.750</span><span style="color:green">+0.150</span></td>
+          <td>14.400</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">1,007,500</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+1.750</span></td>
+          <td>14.250</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">1,003,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+1.250</span><span style="color:green">+0.200</span></td>
+          <td>13.950</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">1,000,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+1.250</span></td>
+          <td>13.750</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">994,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+0.75</span><span style="color:green">+0.200</span></td>
+          <td>13.450</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">990,000</td>
+          <td><span style="color:blue">12.5</span><span style="color:red">+0.750</span></td>
+          <td>13.250</td>
+        </tr>
+        <tr>
+          <td style="text-align:right;">970,000</td>
+          <td><span style="color:blue">12.5</span></td>
+          <td>12.5</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>※此处会加上下述标记的补正值。<br>
+  (蓝：谱面定数，红：等级补正，绿：分数补正)</p>
+</div>
+<p><strong>评分标记（SS/SSS/SSS+）</strong><br>
+根据当前持有的评分标记，将获得以下加分：</p>
+<table>
+<thead>
+<tr>
+<th>评分标记</th>
+<th>加分</th>
+<th>差值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SS</td>
+<td>0.100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>SSS</td>
+<td>0.200</td>
+<td>+0.100</td>
+</tr>
+<tr>
+<td>SSS+</td>
+<td>0.300</td>
+<td>+0.100</td>
+</tr>
+</tbody>
+</table>
+<p><strong>FB标记</strong><br>
+持有FULL BELL标记时，将获得0.050的加分。</p>
+<p><strong>通关标记（FC/AB/AB+）</strong><br>
+根据当前持有的通关标记，将获得以下加分：</p>
+<table>
+<thead>
+<tr>
+<th>通关标记</th>
+<th>加分</th>
+<th>差值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FC</td>
+<td>0.100</td>
+<td>-</td>
+</tr>
+<tr>
+<td>AB</td>
+<td>0.300</td>
+<td>+0.200</td>
+</tr>
+<tr>
+<td>AB+</td>
+<td>0.350</td>
+<td>+0.050</td>
+</tr>
+</tbody>
+</table>
+<p><strong>说明：</strong></p>
+<ol>
+<li>当通关标记从FC更新为AB时，加分将从原有的0.100提升至0.300，实际新增加分为0.200。</li>
+<li>AB+是TS理论值而非键盘理论值，因此即使达成键盘理论值，若漏掉铃铛或受到伤害，仍无法获得AB+加分。</li>
+<li><strong>全连标记、通关标记、最高分无需同时获得</strong><br>
+例如：未刷新最高分但首次达成AB时，仍可获得基于当前最高分的评级值和AB的加分。</li>
+<li>若在仅持有FB标记的状态下，未达成FB但取得FC时，可同时获得FB和FC的加分。</li>
+</ol>
+<p><strong>理论上限：</strong><br>
+当获得所有标记时，理论值为「谱面定数 + 2.7」。</p>
+<p><strong>各星级达成PS评级所需最低定数表</strong></p>
+<center>
+    <img src="..\MDZZ_PLAYONGEKI\曲別PSレート値達成に必要な、☆ごとの最低定数_1.png" width="750">
+    <br>
+    曲別PSレート値達成に必要な、☆ごとの最低定数_（图源オンゲキ攻略wiki）
+</center>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
